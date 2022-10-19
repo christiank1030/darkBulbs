@@ -7,9 +7,10 @@ app.use(express.json())
 app.use(cors())
 app.use(express.static('client'))
 
-const { getHTML } = require('./controller')
+const { getHTML, getJs } = require('./controller')
 
 app.get('/', getHTML)
+app.get('/js', getJs)
 
 
 
