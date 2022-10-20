@@ -18,11 +18,13 @@ let rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 
-const { getHTML, getJs, testFunc } = require('./controller')
+const { getHTML, getJs, testFunc, getError, getWarning } = require('./controller')
 
 app.get('/', getHTML)
 app.get('/js', getJs)
 app.get('/test', testFunc)
+app.get('/error', getError)
+app.get('/warning', getWarning)
 
 
 
