@@ -1,4 +1,5 @@
 let lightswitch = document.getElementById('lightswitch');
+let buyButton = document.getElementById('headerButton')
 
 const imageSwitcher = event => {
     let patio = document.getElementById('outdoor');
